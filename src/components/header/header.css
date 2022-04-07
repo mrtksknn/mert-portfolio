@@ -50,6 +50,10 @@ header {
   padding-top: 3rem;
 }
 
+.me > img {
+  width: 100%;
+}
+
 /* ========== SCROLL DOWN =========== */
 .scroll-down {
   position: absolute;
