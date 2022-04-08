@@ -20,7 +20,7 @@
 }
 
 .portfolio__item:hover {
-  border-color: var(--color-primary-variant);
+  border-color: var(--color-bg-variant);
   background: transparent;
 }
 
