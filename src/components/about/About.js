@@ -2,33 +2,12 @@
 import React from 'react';
 import './about.css';
 import ME from '../../assets/meAbout.jpg';
+import data from './AboutData';
 import {FaAward} from 'react-icons/fa';
 import {FiUsers} from 'react-icons/fi';
 import {VscFolderLibrary} from 'react-icons/vsc';
 
 const About = () => {
-
-  const data = [
-    {
-      id: 1,
-      icon: {FaAward},
-      header: 'Experience',
-      detail: '3+ Years Working'
-    },
-    {
-      id: 2,
-      icon: {FiUsers},
-      header: 'Experience',
-      detail: '3+ Years Working'
-    },
-    {
-      id: 3,
-      icon: {VscFolderLibrary},
-      header: 'Experience',
-      detail: '3+ Years Working'
-    }
-  ];
-
   return (
     <section id='about'>
       <h2>About Me</h2>
