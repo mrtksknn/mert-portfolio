@@ -28,9 +28,9 @@ const Timeline = () => {
                 iconStyle={isWorkIcon ? workIconStyles : shoolIconStyles}
                 icon={isWorkIcon ? <HiDesktopComputer /> : <MdSchool />}
               >
-                <h3 style={{color: '#000'}}>{element.title}</h3>
-                <h5 style={{color: '#000'}}>{element.location}</h5>
-                <p style={{color: '#000'}}>
+                <h2 style={{fontWeight: '600', color: '#6c2c2c'}}>{element.title}</h2>
+                <h5 style={{fontWeight: '600'}}>{element.location}</h5>
+                <p>
                   {element.description}
                 </p>
                 <h6 style={{color: '#000', marginTop: '15px'}}>{element.date}</h6>

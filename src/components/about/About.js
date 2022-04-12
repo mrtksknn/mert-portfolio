@@ -39,9 +39,13 @@ const About = () => {
         </div>
 
         <p>
-          Lorem Ipsum dolor sit amet consectetur adipisicing elit. Eaque eos voluptatem eius doloren
-          maiores nihil ducimus at rem ullam reprehenderit quidem quia deserunt, molestiae, eligendi
-          amet repellat molastias quos totam.
+          My name is Mert Keskin I'm a Front End Developer based in Ankara ☀️. 
+          I describe myself as a passionate developer who loves coding, open source,
+          and the web platform. Aside from my job, I like to create and contribute
+          to open source projects, and try my own projects. That helps me to learn a ton of new stuff, grow as
+          a developer and support other open source projects. Also I enjoy reading technical
+          things and new updates. In my free time you can find me at the gym 🏋️‍♂️, playing video games 
+          and watching popular series.
         </p>
 
         <a href="#contact" className='btn btn-primary'>Let's Talk</a>
