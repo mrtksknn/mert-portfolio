@@ -1,11 +1,44 @@
 import React from 'react';
 import './timeline.css';
 import timelineElements from './TimelineElements';
+import {HiDesktopComputer} from 'react-icons/hi';
+import {MdSchool} from 'react-icons/md';
+import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component/dist-modules';
+import "react-vertical-timeline-component/style.min.css";
 
 const Timeline = () => {
+
+  let workIconStyles = {background: "#06D6A0"}
+  let shoolIconStyles = {background: "#F9C74F"}
+
   return (
     <section>
-      Timeline
+      <h2>My Timeline</h2>
+
+      <VerticalTimeline>
+        {
+          timelineElements.map(element => {
+            let isWorkIcon = element.icon === "work";
+
+            return (
+              <VerticalTimelineElement
+                style={{color: '#000'}}
+                key={element.key} 
+                date={element.date}
+                iconStyle={isWorkIcon ? workIconStyles : shoolIconStyles}
+                icon={isWorkIcon ? <HiDesktopComputer /> : <MdSchool />}
+              >
+                <h3 style={{color: '#000'}}>{element.title}</h3>
+                <h5 style={{color: '#000'}}>{element.location}</h5>
+                <p style={{color: '#000'}}>
+                  {element.description}
+                </p>
+                <h6 style={{color: '#000', marginTop: '15px'}}>{element.date}</h6>
+              </VerticalTimelineElement>
+            )
+          })
+        }
+      </VerticalTimeline>
     </section>
   )
 }
