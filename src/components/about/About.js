@@ -7,6 +7,28 @@ import {FiUsers} from 'react-icons/fi';
 import {VscFolderLibrary} from 'react-icons/vsc';
 
 const About = () => {
+
+  const data = [
+    {
+      id: 1,
+      icon: {FaAward},
+      header: 'Experience',
+      detail: '3+ Years Working'
+    },
+    {
+      id: 2,
+      icon: {FiUsers},
+      header: 'Experience',
+      detail: '3+ Years Working'
+    },
+    {
+      id: 3,
+      icon: {VscFolderLibrary},
+      header: 'Experience',
+      detail: '3+ Years Working'
+    }
+  ];
+
   return (
     <section id='about'>
       <h2>About Me</h2>
@@ -19,23 +41,13 @@ const About = () => {
 
         <div className='about__content'>
         <div className='about__cards'>
-          <article className='about__card'>
-            <FaAward className='about__icon' />
-            <h5>Experience</h5>
-            <small>3+ Years Working</small>
-          </article>
-
-          <article className='about__card'>
-            <FiUsers className='about__icon' />
-            <h5>Clients</h5>
-            <small>200+ Worldwide</small>
-          </article>
-
-          <article className='about__card'>
-            <VscFolderLibrary className='about__icon' />
-            <h5>Projects</h5>
-            <small>10+ Completed</small>
-          </article>
+          {data.map((data) => (
+            <article className='about__card' key={data.id}>
+              {data.id === 1 ? <FaAward className='about__icon' /> : data.id === 2 ? <FiUsers className='about__icon' /> : <VscFolderLibrary className='about__icon' /> }
+              <h5>{data.header}</h5>
+              <small>{data.detail}</small>
+            </article>
+          ))}
         </div>
 
         <p>

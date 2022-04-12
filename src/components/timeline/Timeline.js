@@ -23,7 +23,7 @@ const Timeline = () => {
             return (
               <VerticalTimelineElement
                 style={{color: '#000'}}
-                key={element.key} 
+                key={element.id} 
                 date={element.date}
                 iconStyle={isWorkIcon ? workIconStyles : shoolIconStyles}
                 icon={isWorkIcon ? <HiDesktopComputer /> : <MdSchool />}

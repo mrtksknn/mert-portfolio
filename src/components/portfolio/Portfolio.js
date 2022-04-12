@@ -20,7 +20,7 @@ const Portfolio = () => {
                 </div>
                 <div style={{display: 'flex', marginBottom: '1rem', flexWrap: 'wrap'}}>
                   {techs.map((tech) => (
-                    <div className='portfolio__techs'>
+                    <div className='portfolio__techs' key={tech}>
                       {tech}
                     </div>
                   ))}
