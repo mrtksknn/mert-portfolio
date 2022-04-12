@@ -15,6 +15,9 @@
   background: var(--color-bg-variant);
   padding: 1.3rem;
   border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   border: 1px solid transparent;
   transition: var(--transition);
 }
@@ -28,10 +31,21 @@
   border-radius: 1.5rem;
   overflow: hidden;
   display: flex;
+  flex-direction: column;
 }
 
 .portfolio__item-image > img {
   width: 420px;
+}
+
+.portfolio__techs {
+  border: 1px solid rgba(255, 0, 0, 0.329);
+  border-radius: 2rem;
+  color: rgba(255, 255, 255, 0.596);
+  padding: .5rem 1rem;
+  background: rgba(0, 0, 0, 0.3);;
+  margin-right: .5rem;
+  margin-bottom: .5rem;
 }
 
 .portfolio__item h3 {

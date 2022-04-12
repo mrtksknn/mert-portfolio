@@ -13,7 +13,7 @@ const Timeline = () => {
 
   return (
     <section>
-      <h2>My Timeline</h2>
+      <h2 style={{textAlign: 'center'}}>My Timeline</h2>
 
       <VerticalTimeline>
         {
